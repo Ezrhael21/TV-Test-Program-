@@ -3,8 +3,14 @@
 # 05/15/2023
 # TV Test Program
 
+from TV import TVTest
+
+tv = TVTest()
+
+print (tv.channel)
+print (tv.volumelevel)
+print (tv.on)
 # Create a seperate file class for the following:
-# Initialize the TV object
 # Method to turn on the tv
 # Method to turn of the tv
 # Method to get channel from the user
