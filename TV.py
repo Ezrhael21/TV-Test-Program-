@@ -40,6 +40,12 @@ class TVTest:
     # Method to decrease the channel by 1 
     def channel_down(self):
         self.channel -= 1
+
+    # Method to decrease the volume level by 1 
+    def volumelevel_down(self):
+        self.volumelevel -= 1
+    
+    
     
     
 
