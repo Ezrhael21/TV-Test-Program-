@@ -33,6 +33,10 @@ class TVTest:
     def channel_up(self):
         self.channel += 1
     
+    # Method to increase the volume by 1
+    def volumelevel_up(self):
+        self.volumelevel += 1
+    
     
     
 
