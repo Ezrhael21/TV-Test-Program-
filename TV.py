@@ -16,6 +16,10 @@ class TVTest:
     # Method to get the current channel of the tv
     def get_channel(self):
         return self.channel 
+    
+    # Method to set the channel of the tv
+    def set_channel(self, channel):
+        self.channel = channel
 
     
     
