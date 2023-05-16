@@ -25,6 +25,13 @@ class TVTest:
     def get_volumelevel(self):
         return self.volumelevel
     
+    # Method to set the volume level of the tv
+    def set_volumelevel(self, volumelevel):
+        self.volumelevel = volumelevel
+    
+
+        
+    
 
 
     
