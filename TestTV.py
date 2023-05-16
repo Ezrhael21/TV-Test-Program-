@@ -13,13 +13,11 @@ print (tv.on)
 
 tv.set_channel(5)
 tv.set_volumelevel(3)
+tv.channel_up()
 
-print (tv.turn_on())
-print (tv.turn_off())
 print (tv.get_channel())
-print (tv.set_channel)
 print (tv.get_volumelevel())
-print (tv.set_volumelevel)
+
 # Create a seperate file class for the following:
 # Method to turn on the tv
 # Method to turn of the tv
