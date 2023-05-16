@@ -13,6 +13,11 @@ tv_two = TVTest()
 tv_one.set_channel(3)
 tv_one.set_volumelevel(5)
 
+# Set TV2 Details
+tv_two.set_channel(4)
+tv_two.set_volumelevel(9)
+
 
 # Display the output
 print("TV1's channel is " + str(tv_one.get_channel()) + " and volume level is " + str(tv_one.get_volumelevel()))
+print("TV2's channel is " + str(tv_two.get_channel()) + " and volume level is " + str(tv_two.get_volumelevel()))
