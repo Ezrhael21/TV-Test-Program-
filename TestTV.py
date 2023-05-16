@@ -13,6 +13,7 @@ print (tv.on)
 
 print (tv.turn_on())
 print (tv.turn_off())
+print (tv.get_channel())
 # Create a seperate file class for the following:
 # Method to turn on the tv
 # Method to turn of the tv

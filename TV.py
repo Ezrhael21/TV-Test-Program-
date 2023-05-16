@@ -9,9 +9,13 @@ class TVTest:
     def turn_on(self):
         self.on = True
 
-    # Method to turn of the tv
+    # Method to turn off the tv
     def turn_off(self):
         self.on = False
+
+    # Method to get the current channel of the tv
+    def get_channel(self):
+        return self.channel 
 
     
     
