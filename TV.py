@@ -21,6 +21,12 @@ class TVTest:
     def set_channel(self, channel):
         self.channel = channel
 
+    # Method to get the current volume level of the tv
+    def get_volumelevel(self):
+        return self.volumelevel
+    
+
+
     
     
 
