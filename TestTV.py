@@ -3,6 +3,10 @@
 # 05/15/2023
 # TV Test Program
 
+import pyfiglet
+font = pyfiglet.figlet_format("TV Test Program", font = "slant", justify = "center")
+print (font)
+
 from TV import TVTest
 
 # Create two seperate instances of the TVTest Class
