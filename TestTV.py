@@ -12,10 +12,17 @@ tv_two = TVTest()
 # Ask the user for TV1 details
 channel_one = int(input("Enter TV1's channel: "))
 volume_level_one = int(input("Enter TV1's volume level: "))
+status_one = input("Is TV1 on? (yes/no): ")
 
 # Set TV1 Details
 tv_one.set_channel(channel_one)
 tv_one.set_volumelevel(volume_level_one)
+
+# Turn on/off TV1 based on user input
+if status_one.lower() == "yes":
+    tv_one.turn_on()
+else:
+    tv_one.turn_off()
 
 # Set TV2 Details
 tv_two.set_channel(4)
