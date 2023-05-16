@@ -46,6 +46,12 @@ if status_two.lower() == "yes":
 else:
     tv_two.turn_off()
 
+# Time Delay
+print ("=" * 100)
+print ("Processing...")
+import time
+time.sleep(5)
+
 # Display the output
 print ("=" * 100)
 print("TV1's channel is " + str(tv_one.get_channel()) + " and volume level is " + str(tv_one.get_volumelevel()))
