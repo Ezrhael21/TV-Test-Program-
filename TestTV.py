@@ -4,6 +4,7 @@
 # TV Test Program
 
 import pyfiglet
+print ("=" * 100)
 font = pyfiglet.figlet_format("TV Test Program", font = "slant", justify = "center")
 print (font)
 
@@ -14,6 +15,7 @@ tv_one = TVTest()
 tv_two = TVTest()
 
 # Ask the user for TV1 details
+print ("=" * 100)
 channel_one = int(input("Enter TV1's channel: "))
 volume_level_one = int(input("Enter TV1's volume level: "))
 status_one = input("Is TV1 on? (yes/no): ")
@@ -29,6 +31,7 @@ else:
     tv_one.turn_off()
 
 # Ask the user for TV2 details
+print ("=" * 100)
 channel_two = int(input("Enter TV2's channel: "))
 volume_level_two = int(input("Enter TV2's volume level: "))
 status_two = input("Is TV2 on? (yes/no): ")
@@ -44,5 +47,7 @@ else:
     tv_two.turn_off()
 
 # Display the output
+print ("=" * 100)
 print("TV1's channel is " + str(tv_one.get_channel()) + " and volume level is " + str(tv_one.get_volumelevel()))
 print("TV2's channel is " + str(tv_two.get_channel()) + " and volume level is " + str(tv_two.get_volumelevel()))
+print ("=" * 100)
