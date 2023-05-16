@@ -13,7 +13,7 @@ print (tv.on)
 
 tv.set_channel(5)
 tv.set_volumelevel(3)
-tv.channel_up()
+tv.channel_down()
 tv.volumelevel_up()
 
 print (tv.get_channel())
