@@ -7,8 +7,14 @@ class TVTest:
     
     # Method to turn on the tv
     def turn_on(self):
-        self.on
+        self.on = True
+
+    # Method to turn of the tv
+    def turn_off(self):
+        self.on = False
+
     
     
+
 
     
