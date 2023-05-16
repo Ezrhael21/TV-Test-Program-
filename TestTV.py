@@ -4,9 +4,11 @@
 # TV Test Program
 
 import pyfiglet
-print ("=" * 100)
+import colorama
+
+print (colorama.Fore.GREEN + "=" * 100)
 font = pyfiglet.figlet_format("TV Test Program", font = "slant", justify = "center")
-print (font)
+print (colorama.Fore.YELLOW + font)
 
 from TV import TVTest
 
@@ -15,10 +17,10 @@ tv_one = TVTest()
 tv_two = TVTest()
 
 # Ask the user for TV1 details
-print ("=" * 100)
-channel_one = int(input("Enter TV1's channel: "))
-volume_level_one = int(input("Enter TV1's volume level: "))
-status_one = input("Is TV1 on? (yes/no): ")
+print (colorama.Fore.GREEN + "=" * 100)
+channel_one = int(input(colorama.Fore.BLUE + "Enter TV1's channel: "))
+volume_level_one = int(input(colorama.Fore.BLUE + "Enter TV1's volume level: "))
+status_one = input(colorama.Fore.BLUE + "Is TV1 on? (yes/no): ")
 
 # Set TV1 Details
 tv_one.set_channel(channel_one)
@@ -31,10 +33,10 @@ else:
     tv_one.turn_off()
 
 # Ask the user for TV2 details
-print ("=" * 100)
-channel_two = int(input("Enter TV2's channel: "))
-volume_level_two = int(input("Enter TV2's volume level: "))
-status_two = input("Is TV2 on? (yes/no): ")
+print (colorama.Fore.GREEN + "=" * 100)
+channel_two = int(input(colorama.Fore.BLUE + "Enter TV2's channel: "))
+volume_level_two = int(input(colorama.Fore.BLUE + "Enter TV2's volume level: "))
+status_two = input(colorama.Fore.BLUE + "Is TV2 on? (yes/no): ")
 
 # Set TV2 Details
 tv_two.set_channel(channel_two)
@@ -47,13 +49,13 @@ else:
     tv_two.turn_off()
 
 # Time Delay
-print ("=" * 100)
-print ("Processing...")
+print (colorama.Fore.GREEN + "=" * 100)
+print (colorama.Fore.WHITE + "Processing...")
 import time
 time.sleep(5)
 
 # Display the output
-print ("=" * 100)
-print("TV1's channel is " + str(tv_one.get_channel()) + " and volume level is " + str(tv_one.get_volumelevel()))
+print (colorama.Fore.GREEN + "=" * 100)
+print(colorama.Fore.YELLOW + "TV1's channel is " + str(tv_one.get_channel()) + " and volume level is " + str(tv_one.get_volumelevel()))
 print("TV2's channel is " + str(tv_two.get_channel()) + " and volume level is " + str(tv_two.get_volumelevel()))
-print ("=" * 100)
+print (colorama.Fore.GREEN + "=" * 100)
