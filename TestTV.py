@@ -10,6 +10,8 @@ tv = TVTest()
 print (tv.channel)
 print (tv.volumelevel)
 print (tv.on)
+
+print (tv.turn_on())
 # Create a seperate file class for the following:
 # Method to turn on the tv
 # Method to turn of the tv
